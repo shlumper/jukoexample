@@ -1,0 +1,20 @@
+{
+	"FPGA-u250": {
+		"team": "devops",
+		"test_cmd_path": "/root/jukoexample",
+		"git_repo": "https://github.com/shlumper/jukoexample.git",
+		"image": "deepcontainerregistry.azurecr.io/base_kube_regression_dev:latest",
+		"test_list": {
+			"basic": {
+				"required_mem": "1024",
+				"test_commands": {
+					"test1": "python3 ",
+					"test2": "wget google.com"
+				},
+				"artifact_paths": [
+					"/root/cl_cifar10/verif/common/tools/index.html"
+				]
+			}
+		}
+	}
+}
