@@ -1,2 +1,2 @@
-docker build . -t deepcontainerregistry.azurecr.io/base_python_image:0.1
+docker build . -t deepcontainerregistry.azurecr.io/basic_python_image:1.0
 #az acr login --name deepcontainerregistry.azurecr.io
