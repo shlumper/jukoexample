@@ -7,5 +7,6 @@ RUN apt-get update \
   && pip3 --no-cache-dir install --upgrade pip \
   && rm -rf /var/lib/apt/lists/*
   
+RUN pip3 install requests
 ADD regression_kube_executer.py .
 ADD start_script.sh .
