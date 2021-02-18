@@ -7,8 +7,8 @@ max_retries=10
 >&2 echo "-- trying to clone repo [$retries..$max_retries]"
 git clone $4
 
-git checkout $1
 cd $2
+git checkout $1
 echo ""
 echo "---------- proc sysout ---------"
 bash -c "$3"
