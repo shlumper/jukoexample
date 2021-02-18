@@ -7,8 +7,6 @@ max_retries=10
 >&2 echo "-- trying to clone repo [$retries..$max_retries]"
 git clone $4
 
-cd cl_cifar10
-git config --global user.email devops@deep-aitech.com
 git checkout $1
 cd $2
 echo ""

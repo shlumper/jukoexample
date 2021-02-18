@@ -3,12 +3,16 @@
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
-		"image": "deepcontainerregistry.azurecr.io/base_ubuntu_image:0.1",
+		"image": "deepcontainerregistry.azurecr.io/base_python_image:0.1",
 		"test_list": {
 			"basic": {
 				"required_mem": "1024",
 				"test_commands": {
-					"test1": "python3 ",
+					"fib10": "python calculate.py 10",
+					"fib20": "python calculate.py 20",
+					"fib50": "python calculate.py 50",
+					"fib200": "python calculate.py 200",
+					"fib300": "python calculate.py 300",
 					"test2": "wget google.com"
 				},
 				"artifact_paths": [
