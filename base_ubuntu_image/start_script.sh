@@ -10,10 +10,10 @@ git clone $4
 cd $2
 git checkout $1
 echo ""
-echo "---------- proc sysout ---------"
+echo "------------- std --------------"
 bash -c "$3"
 rt="$(echo $?)"
 echo ""
 echo "--------------------------------"
-printf "execution exit code $rt"
+printf "exit code $rt"
 exit $rt
