@@ -13,7 +13,7 @@
 			"No module named"
 		],
 		"test_list": {
-			"basic": {
+			"slow": {
 				"required_mem": "512",
 				"test_commands": {
 					"fib1k": "python calculatefib.py 1000",
@@ -21,10 +21,17 @@
 					"fib200k": "python calculatefib.py 20000",
 					"fib300k": "python calculatefib.py 30000",
 					"fib500k": "python calculatefib.py 50000"
-				},
-				"artifact_paths": [
-					"/root/jukoexample/output.xml"
-				]
+				}
+			},
+			"fast": {
+				"required_mem": "512",
+				"test_commands": {
+					"fib10": "python calculatefib.py 10",
+					"fib100": "python calculatefib.py 100",
+					"fib1000": "python calculatefib.py 1000",
+					"fib5000": "python calculatefib.py 5000",
+					"fib10000": "python calculatefib.py 10000"
+				}
 			}
 		}
 	},
