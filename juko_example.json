@@ -4,6 +4,14 @@
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
 		"image": "deepcontainerregistry.azurecr.io/base_python_image:1.0",
+		"error_words": [
+			"Error",
+			"Errno",
+			"fail",
+			"failed",
+			"command not found",
+			"No module named"
+		],
 		"test_list": {
 			"basic": {
 				"required_mem": "512",
@@ -41,7 +49,6 @@
 					"test10-createoutput": "python create-output.py",
 					"test11-createoutput": "python create-output.py",
 					"test12-createoutput": "python create-output.py"
-					
 				},
 				"artifact_paths": [
 					"/root/results/",
