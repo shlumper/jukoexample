@@ -1,2 +1,2 @@
 az acr login --name deepcontainerregistry.azurecr.io
-docker push deepcontainerregistry.azurecr.io/basic_python_image:1.0
+docker push deepcontainerregistry.azurecr.io/basic_python_image:$1

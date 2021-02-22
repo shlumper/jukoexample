@@ -3,7 +3,7 @@
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
-		"image": "deepcontainerregistry.azurecr.io/base_python_image:1.0",
+		"image": "deepcontainerregistry.azurecr.io/basic_python_image:1.0",
 		"test_list": {
 			"slow": {
 				"required_mem": "512",
@@ -31,7 +31,7 @@
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
-		"image": "deepcontainerregistry.azurecr.io/base_python_image:1.0",
+		"image": "deepcontainerregistry.azurecr.io/basic_python_image:1.0",
 		"test_list": {
 			"basic": {
 				"required_mem": "512",
@@ -60,7 +60,7 @@
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
-		"image": "deepcontainerregistry.azurecr.io/base_python_image:1.0",
+		"image": "deepcontainerregistry.azurecr.io/basic_python_image:3.0",
 		"error_words": [
 			"Error",
 			"Errno",
