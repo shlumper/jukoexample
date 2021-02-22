@@ -11,7 +11,7 @@
 					"fib20": "python calculate.py 20",
 					"fib50": "python calculate.py 50",
 					"fib200": "python calculate.py 200",
-					"fib400": "python calculate.py 400",
+					"fib400": "python calculate.py 400"
 				},
 				"artifact_paths": [
 					"/root/jukoexample/output.xml"
