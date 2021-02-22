@@ -14,7 +14,7 @@ elif nterms == 1:
 else:
    print("Fibonacci sequence:")
    while count < nterms:
-       print("fib number: " + str(count) + ":" + str(n1))
+       print("fib counter n: " + str(count) + "- equals = " + str(n1))
        nth = n1 + n2
        # update values
        n1 = n2
