@@ -1,6 +1,6 @@
 import json
 import random
-
+import sys
 
 tests = {
 	"FPGA-u250": {
@@ -21,7 +21,10 @@ tests = {
 	}
 }
 
-for number in range(100):
+
+nterms = int(sys.argv[1])
+
+for number in range(nterms):
    rand = random.randint(0,50)
    tests["FPGA-u250"]["test_list"]["basic"]["test_commands"]["fib" + str(number)] = "python calculate.py " + str(rand)
 
