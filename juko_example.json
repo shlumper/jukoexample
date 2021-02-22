@@ -8,14 +8,43 @@
 			"basic": {
 				"required_mem": "512",
 				"test_commands": {
-					"fib10": "python calculate.py 10",
 					"fib20": "python calculate.py 20",
 					"fib50": "python calculate.py 50",
 					"fib200": "python calculate.py 200",
-					"fib300": "python calculate.py 300"
+					"fib400": "python calculate.py 400",
 				},
 				"artifact_paths": [
-					"/root/cl_cifar10/verif/common/tools/index.html"
+					"/root/jukoexample/output.xml"
+				]
+			}
+		}
+	},
+	"artifactExample": {
+		"team": "devops",
+		"git_repo": "https://github.com/shlumper/jukoexample.git",
+		"test_cmd_path": "/root/jukoexample",
+		"image": "deepcontainerregistry.azurecr.io/base_python_image:1.0",
+		"test_list": {
+			"basic": {
+				"required_mem": "512",
+				"test_commands": {
+					"test1-createoutput": "python create-output.py",
+					"test2-createoutput": "python create-output.py",
+					"test3-createoutput": "python create-output.py",
+					"test4-createoutput": "python create-output.py",
+					"test5-createoutput": "python create-output.py",
+					"test6-createoutput": "python create-output.py",
+					"test7-createoutput": "python create-output.py",
+					"test8-createoutput": "python create-output.py",
+					"test9-createoutput": "python create-output.py",
+					"test10-createoutput": "python create-output.py",
+					"test11-createoutput": "python create-output.py",
+					"test12-createoutput": "python create-output.py"
+					
+				},
+				"artifact_paths": [
+					"/root/results/",
+					"/root/data.txt"
 				]
 			}
 		}
