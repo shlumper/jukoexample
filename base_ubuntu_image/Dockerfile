@@ -11,6 +11,6 @@ RUN apt-get update \
 
 WORKDIR /root  
 RUN pip3 install requests
-RUN pip3 install py-fibonacci
+# RUN pip3 install py-fibonacci
 ADD regression_kube_executer.py .
 ADD start_script.sh .
