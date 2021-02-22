@@ -35,7 +35,7 @@
 			}
 		}
 	},
-	"artifactExample": {
+	"basic-example": {
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
