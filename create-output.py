@@ -25,15 +25,16 @@ time.sleep(1.4)
 
 os.makedirs("/root/results", exist_ok=True)
 
-print("creating bitstream.bin")
+print("creating bitstream.bin in results")
 time.sleep(3)
 with open('/root/results/bitstream.bin', 'wb') as fout:
     fout.write(os.urandom(1024))
+print("creating debug.bin in results")
 with open('/root/results/debug.bin', 'wb') as fout:
     fout.write(os.urandom(1024))
 
 
-print("creating results data")
+print("creating results data in /root")
 
 data = {}
 data['people'] = []
@@ -52,6 +53,7 @@ data['people'].append({
     'website': 'apple.com',
     'from': 'Alabama'
 })
+
 
 
 with open('/root/data.txt', 'w') as fout:

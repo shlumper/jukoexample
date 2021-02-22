@@ -8,10 +8,11 @@
 			"basic": {
 				"required_mem": "512",
 				"test_commands": {
-					"fib20": "python calculate.py 20",
-					"fib50": "python calculate.py 50",
-					"fib200": "python calculate.py 200",
-					"fib400": "python calculate.py 400"
+					"fib1k": "python calculate.py 1000",
+					"fib10k": "python calculate.py 10000",
+					"fib200k": "python calculate.py 20000",
+					"fib300k": "python calculate.py 30000",
+					"fib500k": "python calculate.py 50000"
 				},
 				"artifact_paths": [
 					"/root/jukoexample/output.xml"
