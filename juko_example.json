@@ -67,7 +67,7 @@
 			"fail",
 			"failed",
 			"command not found",
-			"No module named"
+			"No module"
 		],
 		"test_list": {
 			"basic": {
