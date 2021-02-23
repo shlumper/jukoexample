@@ -23,11 +23,19 @@
 		}
 	},
 	"fpga-example": {
-		"team": "devops",
+		"team": "hardware",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"image": "deepcontainerregistry.azurecr.io/basic_python_image:1.0",
 		"platform": "FPGAu250",
 		"test_cmd_path": "/root/jukoexample",
+		"error_words": [
+			"Error",
+			"Errno",
+			"fail",
+			"failed",
+			"command not found",
+			"No module"
+		],
 		"test_list": {
 			"slow": {
 				"required_mem": "512",
@@ -37,16 +45,6 @@
 					"fib200k": "python calculatefib.py 20000",
 					"fib300k": "python calculatefib.py 30000",
 					"fib500k": "python calculatefib.py 50000"
-				}
-			},
-			"fast": {
-				"required_mem": "512",
-				"test_commands": {
-					"fib10": "python calculatefib.py 10",
-					"fib100": "python calculatefib.py 100",
-					"fib1000": "python calculatefib.py 1000",
-					"fib5000": "python calculatefib.py 5000",
-					"fib10000": "python calculatefib.py 10000"
 				}
 			}
 		}
@@ -70,6 +68,16 @@
 				"test_commands": {
 					"fib10": "python calculate_with_fib_lib.py 10",
 					"fib100": "python calculate_with_fib_lib.py 100"
+				}
+			},
+			"fast": {
+				"required_mem": "512",
+				"test_commands": {
+					"fib10": "python calculatefib.py 10",
+					"fib100": "python calculatefib.py 100",
+					"fib1000": "python calculatefib.py 1000",
+					"fib5000": "python calculatefib.py 5000",
+					"fib10000": "python calculatefib.py 10000"
 				}
 			}
 		}
