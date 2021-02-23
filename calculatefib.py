@@ -1,22 +1,7 @@
+
 import sys
-nterms = int(sys.argv[1])
 
-# first two terms
-n1, n2 = 0, 1
-count = 0
+from fibonacci import fibonacci
 
-# check if the number of terms is valid
-if nterms <= 0:
-   print("Please enter a positive integer")
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print("fib counter n: " + str(count) + "- equals = " + str(n1))
-       nth = n1 + n2
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1
+
+print("Fibonacci cacluated succesfuly: ",fibonacci(int(sys.argv[1])) )
