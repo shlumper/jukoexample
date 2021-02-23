@@ -25,7 +25,7 @@
 	"fpga-example": {
 		"team": "hardware",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
-		"image": "deepcontainerregistry.azurecr.io/basic_python_image:lastest",
+		"image": "deepcontainerregistry.azurecr.io/basic_python_image:1.0",
 		"platform": "FPGAu250",
 		"test_cmd_path": "/root/jukoexample",
 		"error_words": [
@@ -53,7 +53,7 @@
 		"team": "devops",
 		"git_repo": "https://github.com/shlumper/jukoexample.git",
 		"test_cmd_path": "/root/jukoexample",
-		"image": "deepcontainerregistry.azurecr.io/basic_python_image:3.0",
+		"image": "deepcontainerregistry.azurecr.io/basic_python_image:1.0",
 		"error_words": [
 			"Error",
 			"Errno",
