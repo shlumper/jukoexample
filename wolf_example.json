@@ -44,7 +44,7 @@
 					"fib10k": "python calculatefib.py 10000",
 					"fib200k": "python calculatefib.py 20000",
 					"fib300k": "python calculatefib.py 30000",
-					"fib500k": "python calculatefib.py 50000"
+					"fib500k": "python4 calculatefib.py 50000"
 				}
 			}
 		}
